@@ -3,8 +3,8 @@
 
 ## 目录
 1. [Kmeans](https://github.com/Renl1001/MachineLearning/tree/master/Kmeans)
-2. KNN
-3. Logistic Regression
+2. [KNN](https://github.com/Renl1001/MachineLearning/tree/master/KNN)
+3. [Logistic Regression](https://github.com/Renl1001/MachineLearning/tree/master/LogisticRegression)
 4. Softmax Regreesion
 5. BP神经网络
 6. CART
