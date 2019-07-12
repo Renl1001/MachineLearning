@@ -36,13 +36,9 @@ if __name__=='__main__':
     train_y = train[:, 2]
     test_X = test[:,:2]
 
-    net = BP([2,4,4])
+    net = BP([2,4,1])
     net.train(train_X, train_y)
     show_data(train[:,:2], train[:, 2], 'train')
-    
-    print(test_X.T)
-    print(test_X.T.shape)
 
-    pre_y = net.predict(test_X.T)
-    show_data(test_X, pre_y[:,0], 'test')
-    
+    pre_y = net.predict(test_X)
+    show_data(test_X, pre_y, 'test')
