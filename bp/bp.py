@@ -143,6 +143,7 @@ class BP(object):
             learning_rate {float} -- 学习率 (default: {0.1})
             epoch {int} -- 最大迭代数 (default: {200})
         """
+        loss_list = []
         for i in range(epoch):
             loss = 0
             for j in range(len(train_sample)):
@@ -154,12 +155,14 @@ class BP(object):
                 self._backward(labels[j])
                 # 4. 更新参数
                 self._update_weight(learning_rate)
+            
+            loss_list.append(loss)
             if i > 150:
                 learning_rate /= 10
             if i % 50 == 0 or i == epoch-1:
                 print('------ epoch %d -------' % (i+1))
                 print('loss:{}'.format(loss))
-
+        return loss_list
 
     def _backward(self, label):
         """误差反向传播

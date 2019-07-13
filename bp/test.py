@@ -29,6 +29,16 @@ def show_data(data, label, title, weights=None):
     plt.savefig(outname)
     plt.show()
 
+def show_loss(loss):
+    plt.cla()
+    print(len(loss))
+    plt.plot(np.arange(len(loss)), loss)
+    plt.title('loss')
+    # plt.axis([-10,10,-10,10])
+    outname = "./save/loss.png"
+    plt.savefig(outname)
+    plt.show()
+
 if __name__=='__main__':
     train = loadDataset('train.txt')
     test = loadDataset('test.txt')
@@ -37,7 +47,8 @@ if __name__=='__main__':
     test_X = test[:,:2]
 
     net = BP([2,4,1])
-    net.train(train_X, train_y)
+    loss = net.train(train_X, train_y)
+    show_loss(loss)
     show_data(train[:,:2], train[:, 2], 'train')
 
     pre_y = net.predict(test_X)
