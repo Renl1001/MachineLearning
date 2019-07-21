@@ -7,6 +7,7 @@
 3. [Logistic Regression](https://github.com/Renl1001/MachineLearning/tree/master/LogisticRegression)
 4. [Softmax Regreesion](https://github.com/Renl1001/MachineLearning/tree/master/SoftmaxRegression)
 5. [BP神经网络](https://github.com/Renl1001/MachineLearning/tree/master/BP)
-6. CART
-7. 贝叶斯方法
+6. [CART](https://github.com/Renl1001/MachineLearning/tree/master/CART)
+7. [贝叶斯方法](https://github.com/Renl1001/MachineLearning/tree/master/NaiveBayes)
 8. PCA
+
