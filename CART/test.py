@@ -111,9 +111,10 @@ if __name__ == "__main__":
 
     dcHeadings, trainingData = loadCSV('fishiris.csv')
     # print(trainingData[0][0])
-    clf = CART(0.1)
+    miniGain = 0.05
+    clf = CART(miniGain)
     clf.buildDecisionTree(trainingData)
 
     dot_data = dotgraph(clf.decisionTree, dcHeadings)
     graph = pydotplus.graph_from_dot_data(dot_data)
-    graph.write_png("tree.png")
+    graph.write_png("tree{}.png".format(miniGain))
