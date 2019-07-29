@@ -9,5 +9,5 @@
 5. [BP神经网络](https://github.com/Renl1001/MachineLearning/tree/master/BP)
 6. [CART](https://github.com/Renl1001/MachineLearning/tree/master/CART)
 7. [贝叶斯方法](https://github.com/Renl1001/MachineLearning/tree/master/NaiveBayes)
-8. PCA
+8. [PCA](https://github.com/Renl1001/MachineLearning/tree/master/PCA)
 
